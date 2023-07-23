@@ -2,128 +2,183 @@
 <html lang="en" data-theme="cupcake">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <!-- Tailwind CSS & DaisyUi CDN link -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- Tailwind CSS & DaisyUi CDN link -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body>
-    <!-- Start Header -->
-    <header>
-        <!-- Start Navbar -->
-        <nav class="navbar bg-base-100">
-            <div class="flex-1">
-              <a class="btn btn-ghost normal-case text-xl">DaisyMan</a>
+  <!-- Start Header -->
+  <header>
+    <!-- Start Navbar -->
+    <nav class="navbar bg-base-100">
+      <div class="flex-1">
+        <a class="btn btn-ghost normal-case text-xl">DaisyMan</a>
+      </div>
+      <div class="flex-none">
+        <div class="dropdown dropdown-end">
+          <label tabindex="0" class="btn btn-ghost btn-circle">
+            <div class="indicator">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+              </svg>
+              <span class="badge badge-sm indicator-item">8</span>
             </div>
-            <div class="flex-none">
-              <div class="dropdown dropdown-end">
-                <label tabindex="0" class="btn btn-ghost btn-circle">
-                  <div class="indicator">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" /></svg>
-                    <span class="badge badge-sm indicator-item">8</span>
-                  </div>
-                </label>
-                <div tabindex="0" class="mt-3 z-[1] card card-compact dropdown-content w-52 bg-base-100 shadow">
-                  <div class="card-body">
-                    <span class="font-bold text-lg">8 Items</span>
-                    <span class="text-info">Subtotal: $999</span>
-                    <div class="card-actions">
-                      <button class="btn btn-primary btn-block">View cart</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="dropdown dropdown-end">
-                <label tabindex="0" class="btn btn-ghost btn-circle avatar">
-                  <div class="w-10 rounded-full">
-                    <img src="./assets/avatar.png" />
-                  </div>
-                </label>
-                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                  <li>
-                    <a class="justify-between">
-                      Profile
-                      <span class="badge">New</span>
-                    </a>
-                  </li>
-                  <li><a>Settings</a></li>
-                  <li><a>Logout</a></li>
-                </ul>
-              </div>
-            </div>
-          </nav>
-          <!-- Start Banner Section -->
-          <section>
-            <div class="hero min-h-[calc(100vh-66px)]" style="background-image: url(./assets/bg.jpg);">
-                <div class="hero-overlay bg-opacity-60"></div>
-                <div class="hero-content text-center text-neutral-content">
-                  <div class="max-w-md">
-                    <h1 class="mb-5 text-2xl md:text-4xl lg:text-5xl font-bold">Hello there</h1>
-                    <p class="mb-5 text-base md:text-lg">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
-                    <button class="btn">Shop Now</button>
-                  </div>
-                </div>
-              </div>
-          </section>
-    </header>
-    <main>
-      <!-- Start Huge Collection Section -->
-      <section class="max-w-screen-xl mx-auto px-8 md:px-16 lg:px-32 py-10">
-        <h2 class="text-2xl md:text-3xl lg:text-4xl text-center font-bold">Huge Collection</h2>
-        <p class="text-sm mt-2 text-center font-medium">Browse from a various collection</p>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-5">
-          <!-- 1st Card -->
-          <div class="card bg-base-100 shadow-xl image-full">
-            <figure><img src="./assets/hoodies.jpg" alt="Clothes" /></figure>
+          </label>
+          <div tabindex="0" class="mt-3 z-[1] card card-compact dropdown-content w-52 bg-base-100 shadow">
             <div class="card-body">
-              <h2 class="card-title text-xl md:text-2xl">Clothes!</h2>
-              <p>If a dog chews shoes whose shoes does he choose?</p>
-              <div class="card-actions justify-end">
-                <button class="btn">Explore</button>
-              </div>
-            </div>
-          </div>
-          <!-- 2nd Card -->
-          <div class="card bg-base-100 shadow-xl image-full">
-            <figure><img src="./assets/shoes.jpg" alt="Shoes" /></figure>
-            <div class="card-body">
-              <h2 class="card-title text-xl md:text-2xl">Shoes!</h2>
-              <p>If a dog chews shoes whose shoes does he choose?</p>
-              <div class="card-actions justify-end">
-                <button class="btn">Explore</button>
-              </div>
-            </div>
-          </div>
-          <!-- 3rd Card -->
-          <div class="card  bg-base-100 shadow-xl image-full">
-            <figure><img src="./assets/perfume.jpg" alt="perfume" /></figure>
-            <div class="card-body">
-              <h2 class="card-title text-xl md:text-2xl">perfume!</h2>
-              <p>If a dog chews shoes whose shoes does he choose?</p>
-              <div class="card-actions justify-end">
-                <button class="btn">Explore</button>
+              <span class="font-bold text-lg">8 Items</span>
+              <span class="text-info">Subtotal: $999</span>
+              <div class="card-actions">
+                <button class="btn btn-primary btn-block">View cart</button>
               </div>
             </div>
           </div>
         </div>
-      </section>
-      <!-- Start Easy Purchase Section -->
-      <section class="max-w-screen-xl mx-auto px-8 md:px-16 lg:px-32 py-10">
-        <div class="flex flex-col md:flex-row gap-10 items-center">
-          <div class="flex-1">
-            <h2 class="text-2xl md:text-4xl mb-2 font-semibold">Easy Purchase</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus maiores quibusdam similique dolore accusamus modi ipsum, necessitatibus inventore quas! Error, tenetur molestiae. Quas, ipsa nihil.</p>
-          </div>
-          <div class="flex-1">
-            <img src="./assets/easy-purchase.jpg" alt="Easy Purchase">
+        <div class="dropdown dropdown-end">
+          <label tabindex="0" class="btn btn-ghost btn-circle avatar">
+            <div class="w-10 rounded-full">
+              <img src="./assets/avatar.png" />
+            </div>
+          </label>
+          <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+            <li>
+              <a class="justify-between">
+                Profile
+                <span class="badge">New</span>
+              </a>
+            </li>
+            <li><a>Settings</a></li>
+            <li><a>Logout</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Start Banner Section -->
+    <section>
+      <div class="hero min-h-[calc(100vh-66px)]" style="background-image: url(./assets/bg.jpg);">
+        <div class="hero-overlay bg-opacity-60"></div>
+        <div class="hero-content text-center text-neutral-content">
+          <div class="max-w-md">
+            <h1 class="mb-5 text-2xl md:text-4xl lg:text-5xl font-bold">Hello there</h1>
+            <p class="mb-5 text-base md:text-lg">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
+              excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+            <button class="btn">Shop Now</button>
           </div>
         </div>
-      </section>
-      
-    </main>
+      </div>
+    </section>
+  </header>
+  <main>
+    <!-- Start Huge Collection Section -->
+    <section class="max-w-screen-xl mx-auto px-8 md:px-16 lg:px-32 py-10">
+      <h2 class="text-2xl md:text-3xl lg:text-4xl text-center font-bold">Huge Collection</h2>
+      <p class="text-sm mt-2 text-center font-medium">Browse from a various collection</p>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-5">
+        <!-- 1st Card -->
+        <div class="card bg-base-100 shadow-xl image-full">
+          <figure><img src="./assets/hoodies.jpg" alt="Clothes" /></figure>
+          <div class="card-body">
+            <h2 class="card-title text-xl md:text-2xl">Clothes!</h2>
+            <p>If a dog chews shoes whose shoes does he choose?</p>
+            <div class="card-actions justify-end">
+              <button class="btn">Explore</button>
+            </div>
+          </div>
+        </div>
+        <!-- 2nd Card -->
+        <div class="card bg-base-100 shadow-xl image-full">
+          <figure><img src="./assets/shoes.jpg" alt="Shoes" /></figure>
+          <div class="card-body">
+            <h2 class="card-title text-xl md:text-2xl">Shoes!</h2>
+            <p>If a dog chews shoes whose shoes does he choose?</p>
+            <div class="card-actions justify-end">
+              <button class="btn">Explore</button>
+            </div>
+          </div>
+        </div>
+        <!-- 3rd Card -->
+        <div class="card  bg-base-100 shadow-xl image-full">
+          <figure><img src="./assets/perfume.jpg" alt="perfume" /></figure>
+          <div class="card-body">
+            <h2 class="card-title text-xl md:text-2xl">perfume!</h2>
+            <p>If a dog chews shoes whose shoes does he choose?</p>
+            <div class="card-actions justify-end">
+              <button class="btn">Explore</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Start Easy Purchase Section -->
+    <section class="max-w-screen-xl mx-auto px-8 md:px-16 lg:px-32 py-10">
+      <div class="flex flex-col md:flex-row gap-10 items-center">
+        <div class="flex-1">
+          <h2 class="text-2xl md:text-4xl mb-2 font-semibold">Easy Purchase</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus maiores quibusdam similique dolore
+            accusamus modi ipsum, necessitatibus inventore quas! Error, tenetur molestiae. Quas, ipsa nihil.</p>
+        </div>
+        <div class="flex-1">
+          <img src="./assets/easy-purchase.jpg" alt="Easy Purchase">
+        </div>
+      </div>
+    </section>
+    <section class="max-w-screen-xl mx-auto px-8 md:px-16 lg:px-32 py-10">
+      <h2 class="text-2xl md:text-3xl lg:text-4xl text-center font-bold">Top Products</h2>
+      <p class="text-sm mt-2 text-center font-medium">Browse from a various collection</p>
+      <div class="mt-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+          <!-- Card 1 -->
+          <div class="card bg-base-100 shadow-xl">
+            <figure><img src="./assets/shiny-black-leather-shoes-exude-modern-luxury-generated-by-ai_188544-36154.jpg" alt="Shoes" /></figure>
+            <div class="card-body">
+              <h2 class="card-title text-xl md:text-2xl">Formal Shoe!</h2>
+              <p>Our mission is to provide you with a diverse and trendy collection</p>
+              <div class="card-actions justify-end">
+                <button class="btn ">Buy Now</button>
+              </div>
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div class="card bg-base-100 shadow-xl">
+            <figure><img src="./assets/elegant-businessman-attire-hangs-modern-closet-generated-by-ai_188544-15312.jpg" alt="Shoes" /></figure>
+            <div class="card-body">
+              <h2 class="card-title text-xl md:text-2xl">Formal Shirt!</h2>
+              <p>Our mission is to provide you with a diverse and trendy collection</p>
+              <div class="card-actions justify-end">
+                <button class="btn ">Buy Now</button>
+              </div>
+            </div>
+          </div>
+          <!-- Card-3 -->
+          <div class="card bg-base-100 shadow-xl">
+            <figure><img src="./assets/blue-yellow-t-shirt-wooden-hanger-generated-by-ai_188544-42185.jpg" alt="Shoes" /></figure>
+            <div class="card-body">
+              <h2 class="card-title text-xl md:text-2xl">Formal T-Shirt</h2>
+              <p>Our mission is to provide you with a diverse and trendy collection</p>
+              <div class="card-actions justify-end">
+                <button class="btn ">Buy Now</button>
+              </div>
+            </div>
+          </div>
+          <!-- Card 4 -->
+          <div class="card bg-base-100 shadow-xl">
+            <figure><img src="./assets/elegant-businessman-shirt-wooden-desk-stack-generated-by-ai_188544-34678.jpg" alt="Shoes" /></figure>
+            <div class="card-body">
+              <h2 class="card-title text-xl md:text-2xl">Casual Shirt</h2>
+              <p>Our mission is to provide you with a diverse and trendy collection</p>
+              <div class="card-actions justify-end">
+                <button class="btn ">Buy Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+  </main>
 </body>
 
 </html>
